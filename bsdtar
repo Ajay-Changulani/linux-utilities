@@ -1,0 +1,6 @@
+Problem: Stream data from S3 to HDFS in AWS EMR.
+
+sudo yum -y install bsdtar
+
+aws s3 cp "s3://<S3Object>" - | bsdtar -xOvf - | hadoop fs -put - <HDFSDirectory>
+
