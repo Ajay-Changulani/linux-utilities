@@ -1,6 +1,6 @@
-Problem: Stream data from S3 to HDFS in AWS EMR.
+Problem: Unzip .zip files from S3 to HDFS in AWS EMR using Streaming.
 
 sudo yum -y install bsdtar
 
-aws s3 cp "s3://<S3Object>" - | bsdtar -xOvf - | hadoop fs -put - <HDFSDirectory>
+aws s3 cp "s3://<S3Object>.zip" - | bsdtar -xOvf - | hadoop fs -put - <HDFSDirectory>.csv
 
