@@ -1,3 +1,3 @@
 # linux-utilities
 ### bsdtar
-Stream data from S3 to HDFS in AWS EMR.
+Unzip .zip files from S3 to HDFS in AWS EMR using Streaming.
